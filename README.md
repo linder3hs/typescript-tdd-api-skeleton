@@ -11,12 +11,22 @@
 
 ## Run
 
-* npm run start
+* npm start
+
+## Run dev
+
+* npm run dev
 
 ## Test
 
 * npm run test
 
-** Build
+* Build
 
 * npm run build
+
+## Migrations
+execute:
+```
+npx ts-node src/migrations/handler.ts
+```
