@@ -1,0 +1,22 @@
+{
+  "name": "typescript-tdd-api-skeleton",
+  "version": "1.0.0",
+  "description": "Skeletor for API in Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linder3hs/typescript-tdd-api-skeleton.git"
+  },
+  "keywords": [
+    "Typescript"
+  ],
+  "author": "DevLab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linder3hs/typescript-tdd-api-skeleton/issues"
+  },
+  "homepage": "https://github.com/linder3hs/typescript-tdd-api-skeleton#readme"
+}
