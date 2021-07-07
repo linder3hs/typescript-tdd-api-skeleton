@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import User from './model';
 
 export const helloWorld = (req: Request, res: Response) => {
   res.status(200).send({ status: 200, ok: true, data: 'Hello World!' });
@@ -13,3 +14,11 @@ export const sumNumbers = (req: Request, res: Response): void => {
 
   res.status(200).json({ status: 200, ok: true, data: numbers });
 };
+
+export const users = async (req: Request, res: Response): Promise<Response | void> => {
+  try {
+    return res.json(await User.findAll());
+  } catch (error) {
+    console.log(error);
+  }
+}

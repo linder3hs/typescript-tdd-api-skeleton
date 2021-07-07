@@ -4,9 +4,10 @@
   "description": "Skeletor for API in Typescript",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
+    "dev": "nodemon",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./build/src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,11 +23,17 @@
   },
   "homepage": "https://github.com/linder3hs/typescript-tdd-api-skeleton#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {
-    "@types/express": "^4.17.12",
+    "@types/express": "^4.17.13",
     "@types/jest": "^26.0.23",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.0.0",
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
