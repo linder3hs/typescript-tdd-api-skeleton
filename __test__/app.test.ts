@@ -10,3 +10,11 @@ describe('Test app init route', () => {
     expect(result.ok).toBe(true);
   });
 });
+
+describe('Get all users', () => {
+  test('List of users', async () => {
+    const result = await request(app).get('/users').send();
+    expect(result.status).toBe(200);
+    expect(result.ok).toBe(true);
+  });
+});

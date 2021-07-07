@@ -17,8 +17,12 @@ export const sumNumbers = (req: Request, res: Response): void => {
 
 export const users = async (req: Request, res: Response): Promise<Response | void> => {
   try {
-    return res.json(await User.findAll());
+    return res.status(200).json({
+      status: 200,
+      ok: true,
+      data: await User.findAll(),
+    });
   } catch (error) {
     console.log(error);
   }
-}
+};
